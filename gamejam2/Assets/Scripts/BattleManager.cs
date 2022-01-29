@@ -35,7 +35,7 @@ public class BattleManager : MonoBehaviour
         m_playerUnit.Init();
         m_enemyUnit.Init();
 
-        //StartCoroutine(PlayerTurn());
+        StartCoroutine(PlayerTurn());
     }
 
     IEnumerator PlayerTurn() {
