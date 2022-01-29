@@ -27,7 +27,7 @@ public class smashSpell : MonoBehaviour
         {
             Vector3 spawnLocation = new Vector3(enemy.transform.position.x, enemy.transform.position.y + 10f, enemy.transform.position.z);
             Instantiate(smashSpellPrefabs, spawnLocation, Quaternion.identity);
-            spawned++;
+            //spawned++;
             Debug.Log(spawned);
             //yield return new WaitForSeconds(10.0f);
             
