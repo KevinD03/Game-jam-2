@@ -35,17 +35,17 @@ public class BattleManager : MonoBehaviour
         m_playerUnit.Init();
         m_enemyUnit.Init();
 
-        StartCoroutine(PlayerTurn());
+        //StartCoroutine(PlayerTurn());
     }
 
     IEnumerator PlayerTurn() {
         // Wait for player input
-        //while (!Input.anyKeyDown) {
-        //    yield return null;
-        //}
+        while (!Input.GetKeyDown(KeyCode.A) && !Input.GetKeyDown(KeyCode.S) && !Input.GetKeyDown(KeyCode.D)) {
+            yield return null;
+        }
 
         // TODO: Replace with typing interface
-        string word = m_wordPool[Random.Range(0, m_wordPool.Length)];
+        /*string word = m_wordPool[Random.Range(0, m_wordPool.Length)];
         Debug.Log("Prompt word: " + word);
         TypeManager.ins.SetTargetWord(word);
 
@@ -53,7 +53,7 @@ public class BattleManager : MonoBehaviour
 
         while (TypeManager.ins.IsTyping()) {
             yield return null;
-        }
+        }*/
 
         Debug.Log("Player Attack");
         
