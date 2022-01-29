@@ -8,7 +8,7 @@ public class smashSpell : MonoBehaviour
     public bool ifCastSmash = true;
     public GameObject enemy;
     public int spawnTimes = 1;
-    public int spawned = 1;
+    public int spawned = 0;
     // Start is called before the first frame update
     void Start()
     {
@@ -23,7 +23,7 @@ public class smashSpell : MonoBehaviour
 
     void spawnSmash()
     {
-        if (ifCastSmash == true && spawned == spawnTimes)
+        if (ifCastSmash == true && spawned < spawnTimes)
         {
             Vector3 spawnLocation = new Vector3(enemy.transform.position.x, enemy.transform.position.y + 10f, enemy.transform.position.z);
             Instantiate(smashSpellPrefabs, spawnLocation, Quaternion.identity);
