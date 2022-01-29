@@ -108,7 +108,6 @@ GameObject:
   - component: {fileID: 4176769659281903774}
   - component: {fileID: 1164610539}
   - component: {fileID: 1164610538}
-  - component: {fileID: 3882814740023353958}
   m_Layer: 0
   m_Name: smashSpell
   m_TagString: Untagged
@@ -161,20 +160,3 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 1, y: 1, z: 1}
   m_Center: {x: 0, y: 0, z: 0}
---- !u!114 &3882814740023353958
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 4176769659281903761}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 9f680f0be3775fa4da86af03c9733252, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  smashSpellPrefabs: {fileID: 4176769659281903761}
-  ifCastSmash: 1
-  enemy: {fileID: 2814736073853930866, guid: a76d0e82c4bc68f4b9063b30f207fc66, type: 3}
-  spawnTimes: 2
-  spawned: 0
