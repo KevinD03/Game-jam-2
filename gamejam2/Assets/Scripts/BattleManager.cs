@@ -11,6 +11,7 @@ public class BattleManager : MonoBehaviour
 
     public GameObject m_playerPrefab, m_enemyPrefab;
     public Transform m_playerSpawnPos, m_enemySpawnPos;
+    public string[] m_wordPool;
     public Unit m_playerUnit, m_enemyUnit;
     public State m_state;
 
@@ -39,11 +40,21 @@ public class BattleManager : MonoBehaviour
 
     IEnumerator PlayerTurn() {
         // Wait for player input
-        while (!Input.anyKeyDown) {
+        //while (!Input.anyKeyDown) {
+        //    yield return null;
+        //}
+
+        // TODO: Replace with typing interface
+        string word = m_wordPool[Random.Range(0, m_wordPool.Length)];
+        Debug.Log("Prompt word: " + word);
+        TypeManager.ins.SetTargetWord(word);
+
+        TypeManager.ins.StartTyping();
+
+        while (TypeManager.ins.IsTyping()) {
             yield return null;
         }
 
-        // TODO: Replace with typing interface
         Debug.Log("Player Attack");
         
         // For now, press any key to attack for PoC
