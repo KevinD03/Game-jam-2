@@ -3,7 +3,13 @@ guid: 8d5bfe3d55ab5dc4595eec16aeda6fa9
 MonoImporter:
   externalObjects: {}
   serializedVersion: 2
-  defaultReferences: []
+  defaultReferences:
+  - m_playerPrefab: {fileID: 3250528260154045962, guid: 06da4666ccaa9dd48a4ad9914fde824d, type: 3}
+  - m_enemyPrefab: {fileID: 1709124139382156874, guid: 0eec485c881b5d64db4a84231e6134a4, type: 3}
+  - m_playerSpawnPos: {instanceID: 0}
+  - m_enemySpawnPos: {instanceID: 0}
+  - m_playerUnit: {instanceID: 0}
+  - m_enemyUnit: {instanceID: 0}
   executionOrder: 0
   icon: {instanceID: 0}
   userData: 
