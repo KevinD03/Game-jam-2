@@ -12,24 +12,24 @@ public class smashSpell : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        StartCoroutine(spawnSmash());
+        //StartCoroutine(spawnSmash());
     }
 
     // Update is called once per frame
     void Update()
     {
-            
+        spawnSmash();
     }
 
-    IEnumerator spawnSmash()
+    void spawnSmash()
     {
-        while (ifCastSmash == true)
+        if (Input.GetKeyDown(KeyCode.A))
         {
-            /*Vector3 spawnLocation = new Vector3(enemy.transform.position.x, enemy.transform.position.y + 10f, enemy.transform.position.z);
-            Instantiate(smashSpellPrefabs, spawnLocation, Quaternion.identity);*/
+            Vector3 spawnLocation = new Vector3(enemy.transform.position.x, enemy.transform.position.y + 10f, enemy.transform.position.z);
+            Instantiate(smashSpellPrefabs, spawnLocation, Quaternion.identity);
             spawned++;
             Debug.Log(spawned);
-            yield return new WaitForSeconds(10.0f);
+            //yield return new WaitForSeconds(10.0f);
             
         }
     }
