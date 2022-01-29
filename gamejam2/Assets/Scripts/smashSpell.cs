@@ -7,29 +7,29 @@ public class smashSpell : MonoBehaviour
     public GameObject smashSpellPrefabs;
     public bool ifCastSmash = true;
     public GameObject enemy;
-    public int spawnTimes = 2;
-    public int spawned = 0;
+    public int spawnTimes = 1;
+    public int spawned = 1;
     // Start is called before the first frame update
     void Start()
     {
-        StartCoroutine(spawnSmash());
+        //StartCoroutine(spawnSmash());
     }
 
     // Update is called once per frame
     void Update()
     {
-        //spawnSmash();    
+        spawnSmash();    
     }
 
-    IEnumerator spawnSmash()
+    void spawnSmash()
     {
-        while (ifCastSmash == true && spawned < spawnTimes)
+        if (ifCastSmash == true && spawned == spawnTimes)
         {
             Vector3 spawnLocation = new Vector3(enemy.transform.position.x, enemy.transform.position.y + 10f, enemy.transform.position.z);
             Instantiate(smashSpellPrefabs, spawnLocation, Quaternion.identity);
             spawned++;
             Debug.Log(spawned);
-            yield return new WaitForSeconds(5.0f);
+            //yield return new WaitForSeconds(5.0f);
             
         }
     }
