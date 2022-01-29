@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.44657838, g: 0.49641234, b: 0.57481676, a: 1}
+  m_IndirectSpecularColor: {r: 0.44657898, g: 0.4964133, b: 0.5748178, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -219,7 +219,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 9
+  m_RootOrder: 10
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &421625833
 GameObject:
@@ -662,7 +662,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3250528260154045966, guid: 06da4666ccaa9dd48a4ad9914fde824d, type: 3}
       propertyPath: m_RootOrder
-      value: 7
+      value: 8
       objectReference: {fileID: 0}
     - target: {fileID: 3250528260154045966, guid: 06da4666ccaa9dd48a4ad9914fde824d, type: 3}
       propertyPath: m_LocalScale.x
@@ -1334,6 +1334,31 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1201064956}
   m_CullTransparentMesh: 1
+--- !u!1 &1254731963 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 7771829866180782853, guid: 0eec485c881b5d64db4a84231e6134a4, type: 3}
+  m_PrefabInstance: {fileID: 4225561047260447361}
+  m_PrefabAsset: {fileID: 0}
+--- !u!95 &1254731965
+Animator:
+  serializedVersion: 4
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1254731963}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 31820401bd4cccb468c546bbc5564942, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!1 &1288945418
 GameObject:
   m_ObjectHideFlags: 0
@@ -1377,7 +1402,7 @@ Transform:
   m_Children:
   - {fileID: 675701892}
   m_Father: {fileID: 0}
-  m_RootOrder: 8
+  m_RootOrder: 9
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1358550416
 GameObject:
@@ -1465,7 +1490,7 @@ Mesh:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: pb_Mesh24440
+  m_Name: pb_Mesh24734
   serializedVersion: 10
   m_SubMeshes:
   - serializedVersion: 2
@@ -1623,11 +1648,6 @@ Mesh:
     offset: 0
     size: 0
     path: 
---- !u!1 &1475836974 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 3250528260154045962, guid: 06da4666ccaa9dd48a4ad9914fde824d, type: 3}
-  m_PrefabInstance: {fileID: 480074433}
-  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1499317195
 GameObject:
   m_ObjectHideFlags: 0
