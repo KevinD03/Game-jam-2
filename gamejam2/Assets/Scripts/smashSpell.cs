@@ -25,7 +25,7 @@ public class smashSpell : MonoBehaviour
     {
         if (Input.GetKeyDown(KeyCode.A))
         {
-            Vector3 spawnLocation = new Vector3(enemy.transform.position.x, enemy.transform.position.y + 10f, enemy.transform.position.z);
+            Vector3 spawnLocation = new Vector3(enemy.transform.position.x, enemy.transform.position.y + 20f, enemy.transform.position.z);
             Instantiate(smashSpellPrefabs, spawnLocation, Quaternion.identity);
             //spawned++;
             Debug.Log(spawned);

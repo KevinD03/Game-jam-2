@@ -494,7 +494,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: af9a3c6c8f07bb343983b0ec0ce39b1b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_name: Player
+  m_name: Enemy
   m_attack: 2
   m_maxHP: 10
 --- !u!95 &7316426658018334574
